@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <title>Vascara | Th??ng hi?u th?i trang túi xách</title>
 <meta charset="UTF-8">
