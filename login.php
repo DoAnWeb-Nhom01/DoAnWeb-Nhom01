@@ -3,9 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Elastic Login Form</title>
-  
-  
-  
+
       <link rel="stylesheet" href="css/style.css">
 
   
