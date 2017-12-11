@@ -1,6 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<title>Vascara | Thương hiệu thời trang túi xách</title>
+<title>Vascara | Th??ng hi?u th?i trang t�i x�ch</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="images/logo/logo3.ico" type="image/ico" >
@@ -28,32 +28,31 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 .mySlides {display:none;}
 </style>
 <body >
-
 <!-- Sidebar (hidden by default) -->
 <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left " style="display:none;z-index:2;width:20%;min-width:300px" id="mySidebar">
   	<div class="w3-row w3-bar-block w3-card w3-bar-item w3-bar ">
-	  	<a href="javascript:void(0)" onclick="w3_close()" class=" w3-button w3-left w3-hover-red w3-text-red">☰</a>
+	  	<a href="javascript:void(0)" onclick="w3_close()" class=" w3-button w3-left w3-hover-red w3-text-red">?</a>
 	  	<div class="w3-left w3-button w3-padding-small w3-hover-white">
 	  		<a href="#" onclick="w3_close()">
-	  			<img src="images/logo/logo.png" title="Trang chủ Vascara">
+	  			<img src="images/logo/logo.png" title="Trang ch? Vascara">
 	  		</a>
 	  	</div>
   	</div>
 
   	<div class="w3-dropdown-click">
 	    <div class="w3-bar-item w3-button w3-hover-red w3-hover-text-white w3-text-red w3-white w3-tag" onclick="myProduct()">
-	      Sản Phẩm <i class="fa fa-caret-down"></i>
+	      S?n Ph?m <i class="fa fa-caret-down"></i>
 	    </div>
 	    <div id="product" class=" w3-white w3-card-4 w3-hide">
-	      <a href="#product-new" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red w3-text-gray">Sản phẩm mới</a>
-		  <a href="#product-selling" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red w3-text-gray">Sản phẩm bán chạy</a>
-		  <a href="#product-see" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red w3-text-gray">Sản phẩm xem nhiều</a>
+	      <a href="#product-new" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red w3-text-gray">S?n ph?m m?i</a>
+		  <a href="#product-selling" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red w3-text-gray">S?n ph?m b�n ch?y</a>
+		  <a href="#product-see" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red w3-text-gray">S?n ph?m xem nhi?u</a>
 	    </div>
 	</div>
 
 	<div class="w3-dropdown-click">
 	  	<div class="w3-bar-item w3-button w3-hover-red w3-hover-text-white w3-text-red w3-white w3-tag" onclick="myList()">
-	  	Danh Mục <i class="fa fa-caret-down"></i>
+	  	Danh M?c <i class="fa fa-caret-down"></i>
 		</div>
 		<div id="list" class=" w3-hide w3-white w3-card-4 ">
 		    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red w3-text-gray">Backpack</a>
@@ -66,7 +65,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 
 	<div class="w3-dropdown-click">
 		<div class="w3-bar-item w3-button w3-hover-red w3-hover-text-white w3-text-red w3-white w3-tag" onclick="myTrademark()">
-	      Thương Hiệu <i class="fa fa-caret-down"></i>
+	      Th??ng Hi?u <i class="fa fa-caret-down"></i>
 	    </div>
 	    <div id="trademark" class="w3-dropdown-content w3-white w3-card-4">
 			<a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-hover-text-red w3-text-gray">Efora</a>
@@ -82,8 +81,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 <!-- Top menu -->
 <div class="w3-top w3-white">
   <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
-    <div class="w3-button w3-padding-large w3-left w3-hover-red w3-text-red" onclick="w3_open()">☰</div>
-    <div class="w3-left w3-padding"><img src="images/logo/logo.png" title="Trang chủ Vascara"></div>
+    <div class="w3-button w3-padding-large w3-left w3-hover-red w3-text-red" onclick="w3_open()">?</div>
+    <div class="w3-left w3-padding"><img src="images/logo/logo.png" title="Trang ch? Vascara"></div>
     <div class="container w3-left w3-row">
     	<input class=" w3-border-red w3-border-0 w3-border-bottom w3-margin-left w3-large" type="text" placeholder="Search ..." style="width:200px">
     	<button class="w3-button w3-padding-small w3-hover-text-red w3-white w3-text-red w3-hover-white"><i class="fa fa-search" aria-hidden="true"></i></button>
@@ -120,7 +119,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
   <hr id="product-new" class="w3-padding-large w3-padding-32 w3-margin-top">
   <div class="w3-content">
   		<div class="w3-left w3-xlarge " >
-  			<h5 ><span class="w3-tag w3-wide w3-padding-16 w3-red">SẢN PHẨM MỚI</span></h5>
+  			<h5 ><span class="w3-tag w3-wide w3-padding-16 w3-red">S?N PH?M M?I</span></h5>
   		</div>
 	  	<div class="w3-content w3-padding">
 		  	<div class="w3-padding-16 w3-center w3-row-padding">
@@ -171,19 +170,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 		  	</div>
 		  	<div class="w3-center w3-padding-32">
 			    <div class="w3-bar">
-			      <a href="#" class="w3-bar-item w3-button w3-hover-red">«</a>
+			      <a href="#" class="w3-bar-item w3-button w3-hover-red">�</a>
 			      <a href="#" class="w3-bar-item w3-red w3-button w3-hover-red w3-hover-text-white">1</a>
 			      <a href="#" class="w3-bar-item w3-button w3-hover-red">2</a>
 			      <a href="#" class="w3-bar-item w3-button w3-hover-red">3</a>
 			      <a href="#" class="w3-bar-item w3-button w3-hover-red">4</a>
-			      <a href="#" class="w3-bar-item w3-button w3-hover-red">»</a>
+			      <a href="#" class="w3-bar-item w3-button w3-hover-red">�</a>
 			    </div>
   			</div>
 	  	</div>
   </div>
   <hr id="product-selling" class="w3-padding-large w3-padding-32 w3-margin-top">
   <div class="w3-content">
-  		<h5 ><span class="w3-tag w3-wide w3-padding-16 w3-red">SẢN PHẨM BÁN CHẠY</span></h5>
+  		<h5 ><span class="w3-tag w3-wide w3-padding-16 w3-red">S?N PH?M B�N CH?Y</span></h5>
 	  	<div class="w3-content w3-padding">
 		  	<div class="w3-padding-16 w3-center w3-row-padding">
 				  	<div class="w3-quarter">
@@ -233,19 +232,19 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 		  	</div>
 		  	<div class="w3-center w3-padding-32">
 			    <div class="w3-bar">
-			      <a href="#" class="w3-bar-item w3-button w3-hover-red">«</a>
+			      <a href="#" class="w3-bar-item w3-button w3-hover-red">�</a>
 			      <a href="#" class="w3-bar-item w3-red w3-button w3-hover-red w3-hover-text-white">1</a>
 			      <a href="#" class="w3-bar-item w3-button w3-hover-red">2</a>
 			      <a href="#" class="w3-bar-item w3-button w3-hover-red">3</a>
 			      <a href="#" class="w3-bar-item w3-button w3-hover-red">4</a>
-			      <a href="#" class="w3-bar-item w3-button w3-hover-red">»</a>
+			      <a href="#" class="w3-bar-item w3-button w3-hover-red">�</a>
 			    </div>
   			</div>
 	  	</div>
   </div>
   <hr id="product-see" class="w3-padding-large w3-padding-32 w3-margin-top">
   <div class="w3-content">
-  		<h5 ><span class="w3-tag w3-wide w3-padding-16 w3-red">SẢN PHẨM XEM NHIỀU</span></h5>
+  		<h5 ><span class="w3-tag w3-wide w3-padding-16 w3-red">S?N PH?M XEM NHI?U</span></h5>
 	  	<div class="w3-content w3-padding">
 		  	<div class="w3-padding-16 w3-center w3-row-padding">
 				  	<div class="w3-quarter">
@@ -295,12 +294,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
 		  	</div>
 		  	<div class="w3-center w3-padding-32">
 			    <div class="w3-bar">
-			      <a href="#" class="w3-bar-item w3-button w3-hover-red">«</a>
+			      <a href="#" class="w3-bar-item w3-button w3-hover-red">�</a>
 			      <a href="#" class="w3-bar-item w3-red w3-button w3-hover-red w3-hover-text-white">1</a>
 			      <a href="#" class="w3-bar-item w3-button w3-hover-red">2</a>
 			      <a href="#" class="w3-bar-item w3-button w3-hover-red">3</a>
 			      <a href="#" class="w3-bar-item w3-button w3-hover-red">4</a>
-			      <a href="#" class="w3-bar-item w3-button w3-hover-red">»</a>
+			      <a href="#" class="w3-bar-item w3-button w3-hover-red">�</a>
 			    </div>
   			</div>
 	  	</div>
@@ -349,7 +348,7 @@ function myMap() ;
       </p>
     </div>
 
-    <a class="w3-button w3-xlarge w3-circle w3-theme-action w3-text-white w3-red w3-hover-text-red w3-hover-sand" title="Lên đầu trang" 	id="goTop"
+    <a class="w3-button w3-xlarge w3-circle w3-theme-action w3-text-white w3-red w3-hover-text-red w3-hover-sand" title="L�n ??u trang" 	id="goTop"
   		style="position:fixed;bottom:48px;right:24px;">
   		<i class="fa fa-chevron-up" aria-hidden="true"></i>
 	</a>
