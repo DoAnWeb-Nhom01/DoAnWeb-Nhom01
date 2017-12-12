@@ -4,7 +4,7 @@ session_start();
 $id= $_GET['id'];
         if($id != "") //  N?u có ID truy?n vào
         {
-            if(isset($_SESSION['giohang'][$id]))
+             if(isset($_SESSION['giohang'][$id]))
                             {
                                     // Tãng s? lý?ng nó lên
                                     $_SESSION['giohang'][$id]++;
