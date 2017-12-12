@@ -1,0 +1,46 @@
+PHP LOGIN(Any Database) - Documentation
+===================
+
+ An automated login script
+
+  Version :
+  -----------------
+   https://sourceforge.net/projects/phploginanydata
+
+    Copyright (C) 2010 Shashwat Srivastava <drklrd@gmail.com>
+						Apeksha Singh <apeksha0701@gmail.com>
+   
+	Powered by www.bOtskOOl.com
+    This program is free software; you can redistribute it and/or modify
+    it under the terms of the GNU General Public License,
+    as published by the Free Software Foundation.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program;If not, see <http://www.gnu.org/licenses/>.
+	
+   Features  :
+   ---------------
+   1. Automatic installation
+   2. Includes Captcha
+   3. Includes admin section
+   4. Forgot password/username
+   5. Change password/username
+   6. Remember Me
+   7. Can be integrated with any page by just adding a single line code
+ 
+    Credits:
+	---------------
+    Shashwat Srivastava <drklrd@gmail.com>
+    * creator of the phpmyadmin project
+    * current project maintainer
+	
+	 Apeksha Singh <apeksha0701@gmail.com>
+    * creator of the phpmyadmin project
+    * current project maintainer
+
+	
