@@ -1,4 +1,4 @@
-<?php 
+<?php  
 //this file is part of PHP LOGIN(Any Database)
 //Copyright (C)2010 Shashwat Srivastava ( darklrd@gmail.com )
 //				 	Apeksha Singh (apeksha0701@gmail.com)
