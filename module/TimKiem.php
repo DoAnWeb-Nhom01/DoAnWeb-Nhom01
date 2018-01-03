@@ -88,7 +88,7 @@
         <h4>Giá bán: <?=number_format($row["Gia"])?></h4>
         <p><?=$row["MoTaNgan"]?></p>
         <div align="center">
-              <a href="ChiTietSanPham.php?MaSP=<?=$row["MaSP"]?>#xemsanpham" class="btn btn-success" role="button">
+              <a href="ChiTietSanPham.php?MaSP=<?=$row["MaSP"]?>" class="btn btn-success" role="button">
               <span class="glyphicon glyphicon-ok"></span> Xem chi tiết</a>
               <form method="post" action="addItemToCart.inc.php">
                   <div class="input-group">
