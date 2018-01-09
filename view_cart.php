@@ -102,7 +102,7 @@
                                     <td>
                                         <input class="quantity-textfield" type="text" name="" id="" value="<?= $q ?>">
                                     </td>
-                                    <td>Tổng tiền hóa đơn: <?= number_format($amount) ?></td>
+                                    <td><?= number_format($amount) ?></td>
                                     <td class="text-right">
                                         <a class="btn btn-xs btn-danger cart-remove" data-id="<?= $proId ?>" href="javascript:;" role="button">
                                             <span class="glyphicon glyphicon-remove"></span>
@@ -133,7 +133,7 @@
                                     <form method="POST" action="">
                                         <input type="hidden" name="txtTotal" value="<?= $total ?>">
                                         <?php 
-                                            if ($_SESSION["Da_Dang_Nhap"] !=1) {
+                                            if ($_SESSION["Da_Dang_Nhap"] ==0) {
                             
                                          ?>
                                         <a href="Dangnhap.php" class="btn btn-primary " type="submit" name="btnAddItemToCart">
@@ -145,6 +145,17 @@
 
                                          <?php 
                                             if ($_SESSION["Da_Dang_Nhap"] ==1) {
+                            
+                                         ?>
+                                        <button name="btnCheckOut" id="report" type="submit" class="btn btn-primary">
+                                            <span class="glyphicon glyphicon-bell"></span>
+                                            Thanh toán
+                                        </button>
+                                        <?php
+                                            } 
+                                         ?>
+                                         <?php 
+                                            if ($_SESSION["Da_Dang_Nhap"] ==2) {
                             
                                          ?>
                                         <button name="btnCheckOut" id="report" type="submit" class="btn btn-primary">

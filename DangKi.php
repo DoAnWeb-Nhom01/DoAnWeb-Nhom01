@@ -98,7 +98,7 @@
 				    <input type="text" class="form-control" name="maxacnhan" id="maxacnhan" placeholder="Nhập lại mã phía trên" maxlength="11">
 				  </div>
 				  <button type="submit" class="btn btn-success" name="btnDangKi"> Đăng kí </button>
-				  <p><a href="Login.php"></br>Đã có tài khoản?</a></p>
+				  <p><a href="DangNhap.php"></br>Đã có tài khoản?</a></p>
 				</form>
 		<hr/>
 		</div>

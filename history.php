@@ -2,7 +2,7 @@
 	// session_start();
 include_once 'lib/db.php';
 	session_start();
-	if ($_SESSION["Da_Dang_Nhap"] != 1) 
+	if ($_SESSION["Da_Dang_Nhap"] == 0) 
 	{
 		header('location: index.php');
 	}

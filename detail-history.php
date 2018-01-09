@@ -5,7 +5,7 @@
 	if (!isset($_GET["id"])) {
 		header('Location: index.php');
 	}
-	if ($_SESSION["Da_Dang_Nhap"] != 1) 
+	if ($_SESSION["Da_Dang_Nhap"] == 0) 
 	{
 		header('location: index.php');
 	}

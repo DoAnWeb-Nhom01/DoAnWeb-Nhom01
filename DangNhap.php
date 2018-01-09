@@ -48,6 +48,49 @@
 			}
 		}
 	}
+
+
+	if(isset($_POST["btnDangNhap"]))
+	{
+		if($_SESSION["SoLanDangNhapSai"] >=3)
+		{
+			$input = $_POST["maxacnhan"];
+			if($_SESSION["captchadn"] != $input)
+			{
+				$_SESSION["SoLanDangNhapSai"] +=1;
+				echo '<script type="text/javascript">alert("Mã xác nhận không hợp lệ")</script>';
+			}
+		}
+		if($_SESSION["SoLanDangNhapSai"] < 3 || $_SESSION["captchadn"] == $input)
+		{
+			$username = $_POST["tendangnhap"];
+			$password = $_POST["matkhau"];
+			$password_mh = md5($password);
+			$person=1;
+			$sql = "select * from user where Username = '$username' and Password = '$password_mh' and Loai = '$person'";
+			$list = load($sql);
+			if($list->num_rows > 0)
+			{
+				$_SESSION["SoLanDangNhapSai"] = 0;
+				$_SESSION["Da_Dang_Nhap"] = 2;
+				$_SESSION["Thong_tin_user"] = $list->fetch_object();
+				//lưu cookie
+				if(isset($_POST["cbGhinho"]))
+				{
+					$user_name = $_SESSION["Thong_tin_user"]->Username;
+					setcookie("luu_Dang_nhap",$user_name,time()+3600);
+				}
+				header('location: index.php');
+			}
+			else{
+					$_SESSION["SoLanDangNhapSai"] += 1;
+					echo '<script type="text/javascript">alert("Tên đăng nhập hoặc mật khẩu không đúng")</script>'; 
+			}
+		}
+	}
+
+
+
 ?>
 
 <!DOCTYPE html>

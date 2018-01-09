@@ -31,6 +31,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/bootstrap-3.3.7-dist/css/responsive.css">
 	
+	
 </head>
 <body class="bgpage">
 <div class="container">
@@ -59,9 +60,30 @@ body {
             <ul class="nav navbar-nav navbar-right">
                 <li>
                 <ul class="nav navbar-nav collapse navbar-collapse">
+
+                			
+
+
+
+						 	<li class="dropdown">
+									<?php if($_SESSION["Da_Dang_Nhap"]==2) :?>
+									<a href="#"></span> QUẢN TRỊ </a>
+                                    <ul role="menu" class="sub-menu">
+                                        <li><a href="Add-products.php"> QUẢN LÝ SẢN PHẨM</a></li>
+                                        <li><a href="Admin_Loai.php">QUẢN LÝ LOẠI SẢN PHẨM</a></li>
+										<li><a href="Admin_Hang.php">QUẢN LÝ NHÀ SẢN XUẤT</a></li> 
+										
+                                    </ul>
+                                     <?php endif; ?>
+                                </li>
+
+						 	
+
+
+
 								<li><a href="view_cart.php"><span class="glyphicon glyphicon-shopping-cart"></span><span class="badge"><?= get_total_items() ?></span></a></li>
 								<li class="dropdown">
-									<?php if($_SESSION["Da_Dang_Nhap"]==1) :?>
+									<?php if($_SESSION["Da_Dang_Nhap"]!=0) :?>
 									<a href="profile.php"><span class="glyphicon glyphicon-user"></span> <?=$_SESSION["Thong_tin_user"]->Hoten;?></a>
                                     <ul role="menu" class="sub-menu">
                                         <li><a href="profile.php"><span class="glyphicon glyphicon-user"></span> Thông tin cá nhân</a></li>
@@ -73,11 +95,11 @@ body {
 			        <a href="DangNhap.php"><span class="glyphicon glyphicon-user"></span> Đăng nhập</a>
 		        <?php endif;?>
                                 </li>
-							</ul>	
+							</ul>
                 </li>
             </ul>
             <div class="search">
-	    	 	<form class="navbar-form navbar-left" name="fsearch" id="fsearch" method="POST" action="TimKiemSanPham.php#xemsanpham">
+	    	 	<form class="navbar-form navbar-left" name="fsearch" id="fsearch" method="POST" action="TimKiemSanPham.php">
 	       		 	<div class="form-group">
 	   		        	<input style="width: 300px" type="text" class="form-control" placeholder="Tìm kiếm..." name="txtSearch" id="txtSearch">
 	   			   	</div>
@@ -88,8 +110,8 @@ body {
   			</div>
             <ul class="nav navbar-nav">
                 <li class="active"><a href="index.php"><span class="glyphicon glyphicon-home"></span> Trang chủ</a></li>
-                <li class="dropdown"><a href="#">Nhà sản xuất</a>
-                        <ul role="menu" class="sub-menu">
+                <li class="dropdown "><a style="cursor: pointer;">Nhà sản xuất</a>
+                        <ul role="menu" class="sub-menu" >
                           <?php
 	          				$sql = "select * from nhasanxuat";
 	          				$list = load($sql);
@@ -100,10 +122,10 @@ body {
                      </ul>
                  </ul>
                   <ul class="nav navbar-nav">
-               <li class="dropdown"><a href="#">Loại sản phẩm</a>
+               <li class="dropdown"><a style="cursor: pointer;">Loại sản phẩm</a>
                     <ul role="menu" class="sub-menu">
                	<?php
-	          		$sql = "select * from loaixe";
+	          		$sql = "select * from loaisanpham";
 	          		$list = load($sql);
 	          		while($row = $list->fetch_assoc()):
 	          	?>
